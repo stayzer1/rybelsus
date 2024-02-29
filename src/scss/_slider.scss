@@ -1,0 +1,80 @@
+.slide__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.slider {
+	background: rgb(2, 189, 1);
+}
+.slide__text-main {
+	color: rgb(255, 255, 255);
+	font-family: 'Albra Grotesk TRIAL';
+	font-size: clamp(1rem, 0.675rem + 1.333vw, 1.875rem);
+	font-weight: 600;
+	padding-left: 40px;
+}
+.slide__text-author {
+	text-align: right;
+	padding-top: 24px;
+	color: rgb(255, 255, 255);
+	font-family: 'Albra Display TRIAL';
+	font-size: clamp(0.75rem, 0.425rem + 1.333vw, 1.625rem);
+	font-weight: 500;
+}
+.slide__img {
+	width: clamp(20rem, 12.571rem + 30.476vw, 40rem);
+	height: clamp(17.5rem, 13.786rem + 15.238vw, 27.5rem);
+}
+.swiper {
+  width: 100%;
+  height: 560px;
+}
+@media screen and (max-width: 1300px) {
+	.swiper-button-prev, .swiper-button-next {
+		top: 75%!important;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.swiper-button-prev, .swiper-button-next {
+		top: 68%!important;
+		left: 57%;
+	}
+	.swiper-button-next {
+		left: 62%;
+	}
+}
+@media screen and (max-width: 880px) {
+	.swiper-button-prev, .swiper-button-next {
+		top: 63%!important;
+		left: 60%;
+	}
+	.swiper-button-next {
+		left: 66%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.slide__wrapper {
+		flex-direction: column;
+	}
+	.slide__text-main {
+		padding-left: 0;
+	}
+	.swiper-button-prev, .swiper-button-next {
+		top: 91%!important;
+		left: 5%;
+	}
+	.swiper-button-next {
+		left: 12%;
+	}
+}
+@media screen and (max-width: 570px) {
+	.swiper-button-prev, .swiper-button-next {
+		top: 84%!important;
+		left: 10%;
+	}
+	.swiper-button-next {
+		left: 18%;
+	}
+}
