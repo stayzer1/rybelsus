@@ -64,4 +64,10 @@
 		url("../fonts/AlbraGroteskTRIAL-Semi.woff");
 	font-weight: 600;
 }
+@font-face {
+	font-family: "Inter";
+	src: local("Inter-extrabold"), local("Inter-extrabold"),
+		url("../fonts/Inter-ExtraBold.ttf");
+	font-weight: 800;
+}
 

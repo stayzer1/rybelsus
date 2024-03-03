@@ -1,4 +1,30 @@
 // Footer
-footer {
-    display: block;
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: clamp(1.563rem, 1.003rem + 2.294vw, 3.125rem);
+    padding-bottom: clamp(1.563rem, 1.003rem + 2.294vw, 3.125rem);
+}
+.mail, .text, .tel {
+    color: rgb(0, 0, 0);
+    font-family: 'Albra Grotesk TRIAL';
+    font-size: clamp(0.875rem, 0.265rem + 0.93vw, 1.125rem);
+    font-weight: 500;
+}
+.footer__wrapper {
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .footer__wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        gap: 30px;
+    }
 }

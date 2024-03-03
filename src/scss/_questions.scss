@@ -1,0 +1,113 @@
+.questions {
+    border-bottom: 3px solid rgb(2, 189, 1);
+}
+.questions__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: clamp(2.5rem, 1.606rem + 3.67vw, 5rem);
+    
+}
+.accordion {
+    transition: all 0.3s ease;
+    .accordion__item {
+        border-bottom: 1px solid#C4C4C4;
+        
+        &.accordion__item-active {
+            .accordion__item-content {
+                display: block;
+            }
+
+            .line2 {
+                transform: translate(0) !important;
+                transition: .1s all ease;
+            }
+
+            .line1 {
+                opacity: 0;
+                transition: .1s all ease;
+
+            }
+        }
+
+
+        .accordion__item-trigger {
+            display: flex;
+            padding: 20px 0;
+            align-items: center;
+            cursor: pointer;
+
+            .trigger__text {
+                color: rgb(0, 0, 0);
+                font-family: 'Albra Grotesk TRIAL';
+                font-size: 24px;
+                font-weight: 500;
+                margin-left: 10px;
+            }
+
+            .trigger__img {
+                position: relative;
+                margin-left: auto;
+
+                .line1 {
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background: black;
+                    border-radius: 100px;
+                }
+
+                .line2 {
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background: black;
+                    margin-top: -2px;
+                    border-radius: 100px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        .accordion__item-content {
+            padding-bottom: 20px;
+            display: none;
+            animation: fade .3s ease;
+
+            .content__text {
+                width: clamp(21.25rem, 17.225rem + 16.514vw, 32.5rem);
+                margin-top: 25px;
+                padding-left: 35px;
+                color: rgb(0, 0, 0);
+                font-family: 'Albra Grotesk TRIAL';
+                font-size: 20px;
+                font-weight: 400;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+
+    }
+
+}
+.questions__title {
+    color: rgb(0, 0, 0);
+    font-family: 'Albra Display TRIAL';
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding-bottom: clamp(0.875rem, 0.472rem + 1.651vw, 2rem);
+}
+@media screen and (max-width: 1050px) {
+    .questions__image {
+        display: none;
+    }
+    .questions__wrapper {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

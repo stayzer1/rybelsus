@@ -1,0 +1,83 @@
+.reviews {
+    border-top: 3px solid rgb(2, 189, 1);
+}
+.reviews__title {
+    padding-top: clamp(2.5rem, 1.583rem + 3.761vw, 5.063rem);
+    padding-bottom: clamp(1.25rem, 0.803rem + 1.835vw, 2.5rem);
+    color: rgb(0, 0, 0);
+    font-family: 'Albra Display TRIAL';
+    font-size: clamp(1.5rem, 0.963rem + 2.202vw, 3rem);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.reviews__slide-text {
+    padding-top: clamp(1.125rem, 0.991rem + 0.55vw, 1.5rem);
+    color: rgb(0, 0, 0);
+    font-family: 'Albra Grotesk TRIAL';
+    font-size: clamp(0.875rem, 0.741rem + 0.55vw, 1.25rem);
+    font-weight: 500;
+    text-align: left;
+    height: 88px;
+    p {
+        color: rgb(2, 189, 1);
+        font-family: 'Albra Display TRIAL';
+        font-size: clamp(3.75rem, 2.945rem + 3.303vw, 6rem);
+        font-weight: 500;
+        text-align: left;
+    }
+    img {
+        padding-right: 8px;
+    }
+}
+.reviews__slide-image {
+    width: clamp(20.625rem, 19.06rem + 6.422vw, 25rem);
+    p {
+        display: inline;
+        
+    }
+}
+.reviews__slide-author {
+    text-align: right;
+    color: rgb(0, 0, 0);
+    font-family: 'Albra Display TRIAL';
+    font-size: clamp(1.125rem, 0.991rem + 0.55vw, 1.5rem);
+    font-weight: mediumitalic;
+    font-style: italic;
+    padding-top: 10px;
+}
+.splide__arrows .splide__arrow {
+    top: -10%;
+    background: transparent;
+    opacity: 1;
+}
+.splide__arrows .splide__arrow--prev {
+    left: 91%;
+}
+.splide .splide__slide {
+    width: clamp(20.625rem, 19.06rem + 6.422vw, 25rem)!important;
+}
+.reviews__slide-img {
+    width: clamp(20.625rem, 19.06rem + 6.422vw, 25rem);
+}
+.reviews-btn {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    margin-bottom: clamp(2.5rem, 1.606rem + 3.67vw, 5rem);
+    margin-top: clamp(1.875rem, 1.204rem + 2.752vw, 3.75rem);
+}
+@media screen and (max-width: 768px) {
+    .splide__arrows .splide__arrow--prev {
+        left: 90%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .splide__arrows .splide__arrow--prev {
+        left: 87%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .splide__arrows .splide__arrow--prev {
+        left: 82%;
+    }
+}

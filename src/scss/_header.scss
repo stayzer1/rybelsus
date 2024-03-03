@@ -32,11 +32,27 @@
 		padding-right: clamp(0.313rem, -0.036rem + 1.429vw, 1.25rem);
 	}
 }
-.cart {
+.cart-header {
+	position: relative;
 	img {
-		width: clamp(1.563rem, 0.843rem + 2.952vw, 3.5rem);
-		height: clamp(1.563rem, 0.843rem + 2.952vw, 3.5rem);
+		width: clamp(2.5rem, 2.129rem + 1.524vw, 3.5rem);
+		height: clamp(2.5rem, 2.129rem + 1.524vw, 3.5rem);
 	}
+}
+.cart__count {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	line-height: 13px;
+	display: inline-block;
+	height: 16px;
+	padding: 2px;
+	border: 0.5px solid rgb(229, 255, 228);
+	border-radius: 50%;
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+	font-family: 'Albra Display TRIAL';
+	font-weight: 400;
 }
 .navbar {
 	display: flex;
@@ -60,6 +76,15 @@
 	display: flex;
 	align-items: center;
 	gap: 30px;
+}
+.menu__item, .cart-header {
+	transition: all 0.3s ease;
+}
+.menu__item:hover {
+	transform: translate(-3px, -3px);
+}
+.cart-header:hover {
+	transform: translate(-3px, -3px);
 }
 @media screen and (max-width: $burgerBreakpoint) {
 	// .menu
@@ -154,6 +179,12 @@
 	// .menu__link
 	.menu__item-link {
 			color: white;
+	}
+	
+}
+@media screen and (max-width: 900px) {
+	.cart__count {
+		right: -1px;
 	}
 }
 @media screen and (max-width: 460px) {

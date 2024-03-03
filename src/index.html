@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>RYBELSUS</title>
     <link rel="stylesheet" href="./css/style.min.css">
+
+	<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
 </head>
 
 <body class="main__body">
     <!-- Header -->
-		<div class="green-line">SPECIAL PROMOTION WILL END IN: <p>00:05:45</p></div>
+		<div class="green-line">SPECIAL PROMOTION WILL END IN: <p id="timer1">00:00:00</p></div>
     @@include('./html/_header.html')
 
     <section class="hero">
@@ -20,7 +24,7 @@
 					<h2 class="hero__subtitle">90% EFFIENCY</h2>
 					<h1 class="hero__title">Lose Your Weight <br> Quick and Safely</h1>
 					<h3 class="hero__descr">THE CHOICE OF MORE THAN <br> 1,000,000 CUSTOMERS</h3>
-					<button class="order-btn">ORDER NOW</button>
+					<a class="order-btn">ORDER NOW</a>
 				</div>
 			</div>
 			<div class="verified-line">
@@ -72,7 +76,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="benefits">
+		<section class="benefits" id="benefits">
 			<div class="container">
 				<div class="benefits__wrapper">
 					<div class="benefits__left">
@@ -98,7 +102,7 @@
 				
 			</div>
 		</section>
-		<section class="statistics">
+		<section class="statistics" id="statistics">
 			<div class="container">
 				<h2 class="statistics__title">Rybelsus Statistics</h2>
 				<h3 class="statistics__subtitle">90 out of 100 patients had a significant decrease in BMI, waist and hip circumference.</h3>
@@ -143,12 +147,452 @@
 				</div>
 			</div>
 		</section>
+		<section class="sale" id="assortment">
+			<div class="sale__wrapper">
+				<div class="sale__title">BUY RYBELSUS RIGHT <br> NOW AT A SPECIAL PRICE:</div>
+				<div class="sale__promotion">THE PROMOTION WILL END IN: <p id="timer2">00:00:00</p></div>
+			</div>
+			<div class="container">
+				
+				<div class="product">
+					<div class="product__image">
+						<img src="img/product.svg" alt="" class="product__img">
+						<div class="product__image-descr">The effectiveness of the drug has been confirmed in more than 30 international studies and clinical trials</div>
+					</div>
+					<div class="product__info">
+						<div class="product__mg">
+							<div class="tabs">
+								<div class="tabs__header">
+									<div class="tabs__header-item active">3 mg</div>
+									<div class="tabs__header-item">7 mg</div>
+									<div class="tabs__header-item">14 mg</div>
+								</div>
+								<div class="tabs__content">
+									<div class="tabs__content-item"><!-- MAIN -->
+										<div class="product__title">Rybelsus <p>3mg</p></div>
+										<div class="product__subtitle">PACKAGE PER PILL <p>SPECIAL PRICE</p></div>
+										 <div class="product__pills"><!-- SECOND -->
+											<div class="tabs-second" >
+												<div class="tabs-second__header">
+													<input type="radio" name="tabs" id="tab-first" checked >
+													<label for="tab-first" class="first-tab">
+														<img src="img/10pills.svg" alt="">
+													</label>
+													<input type="radio" name="tabs" id="tab-second">
+													<label for="tab-second" class="second-tab">
+														<img src="img/20pills.svg" alt="">
+													</label>
+													<input type="radio" name="tabs" id="tab-third">
+													<label for="tab-third" class="third-tab">
+														<img src="img/30pills.svg" alt="">
+													</label>
+													<div id="tab-content-1" class="tab-content">
+														<p>
+															<div data-package class="product__amount">
+																<p>Amount:</p>10 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$25.00<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																$250.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a class="addcart" data-name="3mg10pills" data-package="10" data-price="360">Add to Cart</a>
+														</p>
+													</div>
+													<div id="tab-content-2" class="tab-content">
+														<p>
+															<div data-packaging class="product__amount">
+																<p>Amount:</p>20 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$21.00<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																<div class="product__old__globalprice"><div class="position"><strike>$500</strike><p class="discount">-16%</p></div></div>
+																$420.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a data-name="3mg20pills" data-package="20" data-price="420" class="addcart">Add to Cart</a>
+														</p>
+													</div>
+													<div id="tab-content-3" class="tab-content">
+														<p>
+															<div data-packaging class="product__amount">
+																<p>Amount:</p>30 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$18.33<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																<div class="product__old__globalprice"><div class="position"><strike>$750</strike><p class="discount">-26%</p></div></div>
+																$550.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a data-name="3mg30pills" data-package="30" data-price="550" class="addcart">Add to Cart</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__content-item"><!-- MAIN -->
+										<div class="product__title">Rybelsus <p>7mg</p></div>
+										<div class="product__subtitle">PACKAGE PER PILL <p>SPECIAL PRICE</p></div>
+										<div class="product__pills">
+											<div class="tabs-second" >
+												<div class="tabs-second__header1">
+													<input type="radio" name="tabs1" id="tab-first1" checked >
+													<label for="tab-first1" class="first-tab1">
+														<img src="img/10pills.svg" alt="">
+													</label>
+													<input type="radio" name="tabs1" id="tab-second1">
+													<label for="tab-second1" class="second-tab1">
+														<img src="img/20pills.svg" alt="">
+													</label>
+													<input type="radio" name="tabs1" id="tab-third1">
+													<label for="tab-third1" class="third-tab1">
+														<img src="img/30pills.svg" alt="">
+													</label>
+													<div id="tab-content-11" class="tab-content1">
+														<p>
+															<div class="product__amount">
+																<p>Amount:</p>10 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$33.00<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																$330.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a data-name="7mg10pills" data-package="10" data-price="330" class="addcart">Add to Cart</a>
+														</p>
+													</div>
+													<div id="tab-content-21" class="tab-content1">
+														<p>
+															<div class="product__amount">
+																<p>Amount:</p>20 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$28.00<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																<div class="product__old__globalprice"><div class="position"><strike>$660</strike><p class="discount">-15%</p></div></div>
+																$560.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a data-name="7mg20pills" data-package="30" data-price="560" class="addcart">Add to Cart</a>
+														</p>
+													</div>
+													<div id="tab-content-31" class="tab-content1">
+														<p>
+															<div class="product__amount">
+																<p>Amount:</p>30 pills
+															</div>
+															<div class="product__delivery">
+																<p>Delivery:</p>Free Express Delivery
+															</div>
+															<div class="product__price">
+																<p>Price:</p>$26.67<p class="green-price">/pill</p>
+															</div>
+															<div class="product__globalprice">
+																<div class="product__old__globalprice"><div class="position"><strike>$990</strike><p class="discount">-19%</p></div></div>
+																$800.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+															</div>
+															<a data-name="7mg30pills" data-package="30" data-price="800" class="addcart">Add to Cart</a>
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs__content-item"><!-- MAIN -->
+										<div class="product__title">Rybelsus <p>14mg</p></div>
+										<div class="product__subtitle">PACKAGE PER PILL <p>SPECIAL PRICE</p></div>
+										<div class="product__pills">
+											<div class="tabs-second"> <!-- SECOND-->
+												<div class="tabs-second" >
+													<div class="tabs-second__header2">
+														<input type="radio" name="tabs2" id="tab-first2" checked >
+														<label for="tab-first2" class="first-tab2">
+															<img src="img/10pills.svg" alt="">
+														</label>
+														<input type="radio" name="tabs2" id="tab-second2">
+														<label for="tab-second2" class="second-tab2">
+															<img src="img/20pills.svg" alt="">
+														</label>
+														<input type="radio" name="tabs2" id="tab-third2">
+														<label for="tab-third2" class="third-tab2">
+															<img src="img/30pills.svg" alt="">
+														</label>
+														<div id="tab-content-12" class="tab-content2">
+															<p>
+																<div class="product__amount">
+																	<p>Amount:</p>10 pills
+																</div>
+																<div class="product__delivery">
+																	<p>Delivery:</p>Free Express Delivery
+																</div>
+																<div class="product__price">
+																	<p>Price:</p>$36.00<p class="green-price">/pill</p>
+																</div>
+																<div class="product__globalprice">
+																	$360.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+																</div>
+																<a data-name="14mg10pills" data-package="10" data-price="360" class="addcart">Add to Cart</a>
+															</p>
+														</div>
+														<div id="tab-content-22" class="tab-content2">
+															<p>
+																<div class="product__amount">
+																	<p>Amount:</p>20 pills
+																</div>
+																<div class="product__delivery">
+																	<p>Delivery:</p>Free Express Delivery
+																</div>
+																<div class="product__price">
+																	<p>Price:</p>$31.00<p class="green-price">/pill</p>
+																</div>
+																<div class="product__globalprice">
+																	<div class="product__old__globalprice"><div class="position"><strike>$720</strike><p class="discount">-13%</p></div></div>
+																	$620.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+																</div>
+																<a data-name="14mg20pills" data-package="20" data-price="620" class="addcart">Add to Cart</a>
+															</p>
+														</div>
+														<div id="tab-content-32" class="tab-content2">
+															<p>
+																<div class="product__amount">
+																	<p>Amount:</p>30 pills
+																</div>
+																<div class="product__delivery">
+																	<p>Delivery:</p>Free Express Delivery
+																</div>
+																<div class="product__price">
+																	<p>Price:</p>$29.33<p class="green-price">/pill</p>
+																</div>
+																<div class="product__globalprice">
+																	<div class="product__old__globalprice"><div class="position"><strike>$1080</strike><p class="discount">-18%</p></div></div>
+																	$880.<div class="product__globalprice-wrapper"><p class="globalprice-green">00</p><p class="globalprice-only">ONLY</p></div>
+																</div>
+																<a data-name="14mg30pills" data-package="30" data-price="880" class="addcart">Add to Cart</a>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<div class="reviews__title">Customer reviews</div>
+				<section class="splide" aria-label="Splide Basic HTML Example">
+					<div class="splide__arrows">
+						<button class="splide__arrow splide__arrow--prev">
+							<img src="img/slider2-prev-arrow.svg" alt="">
+						</button>
+						<button class="splide__arrow splide__arrow--next">
+							<img src="img/slider2-next-arrow.svg" alt="">
+						</button>
+				  </div>
+					<div class="splide__track">
+						  <ul class="splide__list">
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I never thought it was possible to lose weight so quickly. The delivery is fast and the service is easy to use</div>
+									<div class="reviews__slide-author">Emily Johnson</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">A friend recommended this site to me and I will definitely thank her the next time we meet. Minus 5 kg in a week!</div>
+									<div class="reviews__slide-author">Sophia Williams</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I never thought it was possible to lose weight so quickly. The delivery is fast and the service is easy to use</div>
+									<div class="reviews__slide-author">Ava Brown</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">The only drug I've tried that really helped me get rid of the extra weight</div>
+									<div class="reviews__slide-author">Mia Thompson</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I used to use Ozempik, but the constant injections were unbearable. I switched to this drug and am happy with my life</div>
+									<div class="reviews__slide-author">Charlotte Adams</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">Always wanted to lose weight, but couldn't. This drug finally changed the situation. I lost 15 kg in a month</div>
+									<div class="reviews__slide-author">Grace King</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">A friend recommended Rybelsus because she lost weight with it. Today the drug arrived, I will try it!</div>
+									<div class="reviews__slide-author">Lily Scott</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I'm just shocked! You can sweat for 2 hours on the treadmill, or you can just drink this product. The result is even better.</div>
+									<div class="reviews__slide-author">Riley Perez</div>
+								</div>
+							  </li>
+							  <li class="splide__slide">
+								<div class="reviews__slide-image">
+									<img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
+									<div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">Finally one drug that actually works.</div>
+									<div class="reviews__slide-author">Luna Rivera</div>
+								</div>
+							  </li>
+						  </ul>
+					</div>
+				  </section>
+				  <button class="order-btn reviews-btn">ORDER NOW</button>
+			</div>
+		</section>
+		<section class="questions" id="faq">
+			<div class="container">
+				<h2 class="questions__title">Frequently Asked Questions</h2>
+				<div class="questions__wrapper">
+					<div class="questions__image">
+						<img src="img/questions-image.svg" alt="">
+					</div>
+					<div class="accordion">
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">How safe is the drug Rybelsus?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">The drug has no side effects and contraindications</div>
+							</div>
+						</div>
+					
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">How fast can I lose weight?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">Depends on your BMI, but on average clients achieve their desired results within 1-3 months.</div>
+							</div>
+						</div>
+					
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">Can the drug be combined with other medicines?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">Yes, you can take Rybelsus at the same time as other medications without any concerns.</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">Do I need to exercise while taking the medication?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">No, weight loss does not require additional exercise</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">Do I need to limit the number of calories I consume?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">The active ingredient regulates blood glucose levels, so you don't need to restrict yourself</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">Will my weight return after completing the course?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">No, after the full course, your weight will remain constant for six months, however, we recommend periodic follow-up courses to ensure weight maintenance is guaranteed</div>
+							</div>
+						</div>
+						<div class="accordion__item">
+							<div class="accordion__item-trigger">
+								<div class="trigger__text">To which countries can the drug be ordered?</div>
+								<div class="trigger__img">
+									<span class="line1"></span>
+									<span class="line2"></span>
+								</div>
+							</div>
+							<div class="accordion__item-content">
+								<div class="content__text">Delivery works all over the world</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
     <!-- Footer -->
-    <!-- @@include('./html/_footer.html') -->
+    @@include('./html/_footer.html')
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 
 </html>
