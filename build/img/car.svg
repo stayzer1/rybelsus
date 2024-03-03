@@ -1,0 +1,20 @@
+<svg width="64.000000" height="64.000000" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip32_56">
+			<rect id="Frame" width="64.000000" height="64.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Frame" width="64.000000" height="64.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip32_56)">
+		<path id="Vector" d="M26.6665 45.3335C26.6665 42.3877 24.2788 40 21.3335 40C18.3877 40 16 42.3877 16 45.3335C16 48.2788 18.3877 50.6665 21.3335 50.6665C24.2788 50.6665 26.6665 48.2788 26.6665 45.3335Z" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M53.333 45.3335C53.333 42.3877 50.9453 40 48 40C45.0542 40 42.6665 42.3877 42.6665 45.3335C42.6665 48.2788 45.0542 50.6665 48 50.6665C50.9453 50.6665 53.333 48.2788 53.333 45.3335Z" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round"/>
+		<path id="Vector" d="M26.7998 45.3335L40 45.3335L40 17.6001C40 16.7163 39.2837 16 38.3999 16L2.6665 16" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<path id="Vector" d="M15.0669 45.333L9.6001 45.333C8.71631 45.333 8 44.6167 8 43.7334L8 30.6665" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<path id="Vector" d="M5.3335 24L16 24" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round" stroke-linecap="round"/>
+		<path id="Vector" d="M40 24L54.9604 24C55.5928 24 56.1655 24.3726 56.4224 24.9502L61.1953 35.6895C61.2866 35.8945 61.3335 36.1157 61.3335 36.3394L61.3335 43.7334C61.3335 44.6172 60.6172 45.3335 59.7334 45.3335L54.6665 45.3335" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<path id="Vector" d="M40 45.3335L42.6665 45.3335" stroke="#02BD01" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+	</g>
+</svg>
