@@ -1,124 +1,152 @@
 .hero {
-	background: url(../img/hero_bkg.svg) center (center/cover) no-repeat;
+  background: url(../img/hero_bkg.svg) center (center/cover) no-repeat;
+  background-size: 100% clamp(24.375rem, 1.875rem + 46.875vw, 44.063rem);
 }
 .order-btn {
-	cursor: pointer;
-	box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.35);
 }
-.order-btn:hover, .addcart:hover {
-	-webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.order-btn:hover,
+.addcart:hover {
+  -webkit-animation: shadow-drop-2-center 0.4s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
- @-webkit-keyframes shadow-drop-2-center {
-	0% {
-	  -webkit-transform: translateZ(0);
-			  transform: translateZ(0);
-	  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-			  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
-	}
-	100% {
-	  -webkit-transform: translateZ(50px);
-			  transform: translateZ(50px);
-	  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-			  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-	}
+@-webkit-keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
   }
-  @keyframes shadow-drop-2-center {
-	0% {
-	  -webkit-transform: translateZ(0);
-			  transform: translateZ(0);
-	  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-			  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
-	}
-	100% {
-	  -webkit-transform: translateZ(50px);
-			  transform: translateZ(50px);
-	  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-			  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-	}
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
-  
+}
+@keyframes shadow-drop-2-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
 .hero__info {
-	text-align: left;
-	padding-bottom: clamp(5rem, 3.212rem + 7.333vw, 9.813rem);
+  text-align: left;
+  padding-bottom: clamp(1.875rem, -0.911rem + 11.429vw, 9.375rem);
 }
 .hero__subtitle {
-	color: rgb(28, 28, 28);
-	font-family: 'Albra Display TRIAL';
-	font-size: clamp(1.25rem, 0.879rem + 1.524vw, 2.25rem);
-	font-weight: 500;
-	text-align: left;
-	padding-top: 100px;
+  color: rgb(28, 28, 28);
+  font-family: "Albra Display TRIAL";
+  font-size: clamp(1.25rem, 0.879rem + 1.524vw, 2.25rem);
+  font-weight: 500;
+  text-align: left;
+  padding-top: clamp(2.813rem, -1.116rem + 8.185vw, 6.25rem);
 }
 .hero__title {
-	color: rgb(28, 28, 28);
-	font-family: 'Albra Display TRIAL';
-	font-size: clamp(2.188rem, 1.514rem + 2.762vw, 4rem);
-	font-weight: 700;
-	text-align: left;
-	padding-top: 12px;
-	padding-bottom: 32px;
+  color: rgb(28, 28, 28);
+  font-family: "Albra Display TRIAL";
+  //   font-size: clamp(2.188rem, 1.514rem + 2.762vw, 4rem);
+  font-size: clamp(2.125rem, 1.614rem + 2.095vw, 3.5rem);
+  font-weight: 700;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 32px;
 }
 .hero__descr {
-	color: rgb(28, 28, 28);
-	font-family: 'Albra Grotesk TRIAL';
-	font-size: clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
-	font-weight: 500;
-	text-align: left;
-	padding-bottom: 60px;
+  color: rgb(28, 28, 28);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
+  font-weight: 500;
+  text-align: left;
+  padding-bottom: 60px;
 }
 .order-btn {
-	border-radius: 16px;
-	background: rgb(2, 189, 1);
-	padding: clamp(0.813rem, 0.65rem + 0.667vw, 1.25rem) clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
-	color: rgb(255, 255, 255);
-	font-family: 'Albra Grotesk TRIAL';
-	font-size: clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
-	font-weight: 800;
+  border-radius: 16px;
+  background: rgb(2, 189, 1);
+  padding: clamp(0.813rem, 0.65rem + 0.667vw, 1.25rem)
+    clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
+  color: rgb(255, 255, 255);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
+  font-weight: 800;
 }
 .verified-line {
-	background-color: #E5FFE4;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  background-color: #e5ffe4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .verified__wrapper {
-	display: flex;
-	align-items: center;
-	gap: 16px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .verified-line__text {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .verified-line__text-info {
-	color: rgb(0, 0, 0);
-	font-family: 'Albra Grotesk TRIAL';
-	font-size: clamp(0.875rem, 0.782rem + 0.381vw, 1.125rem);
-	font-weight: 400;
-	p {
-		color: rgb(0, 0, 0);
-		font-family: 'Albra Grotesk TRIAL';
-		font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
-		font-weight: 700;
-	}
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(0.875rem, 0.782rem + 0.381vw, 1.125rem);
+  font-weight: 400;
+  p {
+    color: rgb(0, 0, 0);
+    font-family: "Albra Grotesk TRIAL";
+    font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
+    font-weight: 700;
+  }
 }
 .verified-line__company {
-	display: flex;
-	align-items: center;
-	gap: clamp(0.938rem, 0.589rem + 1.429vw, 1.875rem);
+  display: flex;
+  align-items: center;
+  gap: clamp(0.938rem, 0.589rem + 1.429vw, 1.875rem);
 }
 @media screen and (max-width: 1050px) {
-	.verified-line__company {
-		flex-wrap: wrap;
-		padding-left: 30px;
-	}
+  .verified-line__company {
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .verified__wrapper {
+    flex-direction: column;
+  }
+  .verified-line__company {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 637px) {
-	.verified-line {
-		display: none;
-	}
+  .hero {
+    background: none;
+  }
+  .hero__subtitle {
+    padding-top: clamp(8.125rem, -0.263rem + 34.413vw, 13.438rem);
+    background: url(../img/hero_bkg.svg) center (center/cover) no-repeat;
+    background-size: 100% clamp(15rem, 4.683rem + 42.328vw, 25rem);
+    height: clamp(15rem, 4.683rem + 42.328vw, 25rem);
+  }
+  .hero__subtitle-text {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__subtitle-text {
+    width: 100px;
+    margin: 0;
+  }
 }

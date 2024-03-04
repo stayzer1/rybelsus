@@ -19,40 +19,46 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     @@include('./html/_header.html')
 
     <section class="hero">
+		<h2 class="hero__subtitle">
+			<div class="container hero__subtitle-text">
+				90% EFFIENCY
+			</div>
+		</h2>
 			<div class="container">
+				
 				<div class="hero__info">
-					<h2 class="hero__subtitle">90% EFFIENCY</h2>
 					<h1 class="hero__title">Lose Your Weight <br> Quick and Safely</h1>
 					<h3 class="hero__descr">THE CHOICE OF MORE THAN <br> 1,000,000 CUSTOMERS</h3>
 					<a class="order-btn">ORDER NOW</a>
 				</div>
 			</div>
-			<div class="verified-line">
-				<div class="container">
-					<div class="verified__wrapper">
-						<div class="verified-line__text">
-							<div class="verified-line__text-image"><img src="img/Star.svg" alt=""></div>
-							<div class="verified-line__text-info">
-								<p>VERIFIED PHARMACY STORE</p>
-								More 100 Approved Certificates
-							</div>
-						</div>
-						<div class="verified-line__company">
-							<img src="img/fda.svg" alt="">
-							<img src="img/med.svg" alt="">
-							<img src="img/pgeu.svg" alt="">
-							<img src="img/mipa.svg" alt="">
-							<img src="img/cipa.svg" alt="">
-							<img src="img/Mastercard-logo.svg" alt="">
-							<img src="img/verified-by-visa-logo-825D2E4C69-seeklogo.svg" alt="">
-							<img src="img/McAfee__Secure-logo-120FEE6074-seeklogo.svg" alt="">
+			
+		</section>
+		<div class="verified-line">
+			<div class="container">
+				<div class="verified__wrapper">
+					<div class="verified-line__text">
+						<div class="verified-line__text-image"><img src="img/Star.svg" alt=""></div>
+						<div class="verified-line__text-info">
+							<p>VERIFIED PHARMACY STORE</p>
+							More 100 Approved Certificates
 						</div>
 					</div>
-					
+					<div class="verified-line__company">
+						<img src="img/fda.svg" alt="">
+						<img src="img/med.svg" alt="">
+						<img src="img/pgeu.svg" alt="">
+						<img src="img/mipa.svg" alt="">
+						<img src="img/cipa.svg" alt="">
+						<img src="img/Mastercard-logo.svg" alt="">
+						<img src="img/verified-by-visa-logo-825D2E4C69-seeklogo.svg" alt="">
+						<img src="img/McAfee__Secure-logo-120FEE6074-seeklogo.svg" alt="">
+					</div>
 				</div>
 				
 			</div>
-		</section>
+			
+		</div>
 		<section class="results">
 			<div class="container">
 				<div class="results__wrapper">
@@ -156,16 +162,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 				
 				<div class="product">
 					<div class="product__image">
-						<img src="img/product.svg" alt="" class="product__img">
+						<div class="product__image-img" id="image_3mg" style="display: block;">
+							<img src="img/3mg10.png" alt="3mg" class="product__img">
+						</div>
+						<div class="product__image-img" id="image_7mg" style="display: none;">
+							<img src="img/7mg10.png" alt="7mg" class="product__img">
+						</div>
+						<div class="product__image-img" id="image_14mg" style="display: none;">
+							<img src="img/14mg10.png" alt="14mg" class="product__img">
+						</div>
 						<div class="product__image-descr">The effectiveness of the drug has been confirmed in more than 30 international studies and clinical trials</div>
 					</div>
 					<div class="product__info">
 						<div class="product__mg">
 							<div class="tabs">
 								<div class="tabs__header">
-									<div class="tabs__header-item active">3 mg</div>
-									<div class="tabs__header-item">7 mg</div>
-									<div class="tabs__header-item">14 mg</div>
+									<div onclick="displayImage('image_3mg')" class="tabs__header-item active" id="3mg">3 mg</div>
+									<div onclick="displayImage('image_7mg')" class="tabs__header-item" id="7mg">7 mg</div>
+									<div onclick="displayImage('image_14mg')" class="tabs__header-item"id="14mg">14 mg</div>
 								</div>
 								<div class="tabs__content">
 									<div class="tabs__content-item"><!-- MAIN -->

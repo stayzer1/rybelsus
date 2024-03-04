@@ -1,288 +1,302 @@
 .product {
-    padding-top: clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
+  padding-top: clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: clamp(1.875rem, 1.179rem + 2.857vw, 3.75rem);
 }
 .product__img {
-    padding: 36px 24px 36px 24px;
-    box-sizing: border-box;
-    border: 1px solid rgb(205, 205, 205);
-    border-radius: 24px;
-    width: clamp(18.75rem, 12.802rem + 24.404vw, 35.375rem);
-    height: clamp(15.813rem, 10.781rem + 20.642vw, 29.875rem);
-
+  padding: 36px 24px 36px 24px;
+  box-sizing: border-box;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 24px;
+  width: clamp(18.75rem, 12.802rem + 24.404vw, 35.375rem);
+  height: clamp(15.813rem, 10.781rem + 20.642vw, 29.875rem);
 }
 .tabs__header {
-    display: flex;
-    gap: 16px;
-    padding-bottom: 32px;
+  display: flex;
+  gap: 16px;
+  padding-bottom: 32px;
 }
 .tabs__header-item {
-    box-sizing: border-box;
-    border: 2px solid rgb(217, 217, 217);
-    border-radius: 12px;
-    padding: 4px 14px 4px 14px;
-    color: rgb(203, 203, 203);
-    font-family: 'Inter';
-    font-size: clamp(1.125rem, 0.991rem + 0.55vw, 1.5rem);
-    font-weight: 800;
-    &.active {
-        background: rgb(22, 191, 14);
-        border-color: rgb(22, 191, 14);
-        color: #fff;
-    }
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 2px solid rgb(217, 217, 217);
+  border-radius: 12px;
+  padding: 4px 14px 4px 14px;
+  color: rgb(203, 203, 203);
+  font-family: "Inter";
+  font-size: clamp(1.125rem, 0.991rem + 0.55vw, 1.5rem);
+  font-weight: 800;
+  &.active {
+    background: rgb(22, 191, 14);
+    border-color: rgb(22, 191, 14);
+    color: #fff;
+  }
 }
 .tabs__content-item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .product__title {
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1.5rem, 1.142rem + 1.468vw, 2.5rem);
-    font-weight: 700;
-    padding-bottom: 8px;
-   p {
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1.5rem, 1.142rem + 1.468vw, 2.5rem);
+  font-weight: 700;
+  padding-bottom: 8px;
+  p {
     display: inline;
     color: rgb(2, 189, 1);
-   } 
+  }
 }
 .product__subtitle {
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1rem, 0.821rem + 0.734vw, 1.5rem);
-    font-weight: 500;
-    padding-bottom: 20px;
-    p {
-        display: inline;
-        color: rgb(2, 189, 1);
-    }
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.821rem + 0.734vw, 1.5rem);
+  font-weight: 500;
+  padding-bottom: 20px;
+  p {
+    display: inline;
+    color: rgb(2, 189, 1);
+  }
 }
 .tabs-second__content-item {
-    display: flex;
-    flex-direction: column;
-    p {
-        display: inline;
-        color: rgb(138, 138, 138);
-    font-family: 'Albra Grotesk TRIAL';
+  display: flex;
+  flex-direction: column;
+  p {
+    display: inline;
+    color: rgb(138, 138, 138);
+    font-family: "Albra Grotesk TRIAL";
     font-size: 24px;
     font-weight: 400;
     padding-right: 12px;
-    }
+  }
 }
-.product__amount, .product__delivery, .product__price {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1.063rem, 0.906rem + 0.642vw, 1.5rem);
-    font-weight: 500;
-    padding-top: 24px;
+.product__amount,
+.product__delivery,
+.product__price {
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1.063rem, 0.906rem + 0.642vw, 1.5rem);
+  font-weight: 500;
+  padding-top: 24px;
 }
 .product__price .green-price {
-    color: rgb(2, 189, 1);
+  color: rgb(2, 189, 1);
 }
 .product__globalprice {
-    display: flex;
-    align-items: end;
-    padding-top: clamp(2.5rem, 2.053rem + 1.835vw, 3.75rem);
-    padding-bottom: clamp(1.563rem, 1.227rem + 1.376vw, 2.5rem);
+  display: flex;
+  align-items: end;
+  padding-top: clamp(2.5rem, 2.053rem + 1.835vw, 3.75rem);
+  padding-bottom: clamp(1.563rem, 1.227rem + 1.376vw, 2.5rem);
 }
 .product__globalprice-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.product__globalprice, .product__globalprice-wrapper {
-    color: rgb(22, 191, 14);
-    font-family: 'Albra Display TRIAL';
-    font-size: 48px;
-    font-weight: 700;
+.product__globalprice,
+.product__globalprice-wrapper {
+  color: rgb(22, 191, 14);
+  font-family: "Albra Display TRIAL";
+  font-size: 48px;
+  font-weight: 700;
 }
 .product__globalprice .globalprice-green {
-    color: rgb(22, 191, 14);
-    font-family: 'Albra Display TRIAL';
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(22, 191, 14);
+  color: rgb(22, 191, 14);
+  font-family: "Albra Display TRIAL";
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(22, 191, 14);
 }
 .product__globalprice-wrapper .globalprice-only {
-    color: rgb(22, 191, 14);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: 20px;
-    font-weight: 700;
+  color: rgb(22, 191, 14);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: 20px;
+  font-weight: 700;
 }
 .addcart {
-    cursor: pointer;
-    border-radius: 16px;
-    background: rgb(2, 189, 1);
-    text-align: left;
-    padding: 14px 60px 14px 60px;
-    color: rgb(255, 255, 255);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: 20px;
-    font-weight: 800;
-    width: 231px;
+  cursor: pointer;
+  border-radius: 16px;
+  background: rgb(2, 189, 1);
+  text-align: left;
+  padding: 14px 60px 14px 60px;
+  color: rgb(255, 255, 255);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: 20px;
+  font-weight: 800;
+  width: 231px;
 }
 .product__old__globalprice {
-    color: rgb(202, 202, 202);
-    font-family: 'Albra Display TRIAL';
-    font-size: 32px;
-    font-weight: 700;
-    padding-right: clamp(4.688rem, 4.128rem + 2.294vw, 6.25rem);
+  color: rgb(202, 202, 202);
+  font-family: "Albra Display TRIAL";
+  font-size: 32px;
+  font-weight: 700;
+  padding-right: clamp(4.688rem, 4.128rem + 2.294vw, 6.25rem);
 }
 .product__old__globalprice .discount {
-    color: rgb(22, 191, 14);
-    font-family: 'Albra Display TRIAL';
-    font-size: 32px;
-    font-weight: 700;
-    position: absolute;
-    top: -20px;
-    left: 60px;
+  color: rgb(22, 191, 14);
+  font-family: "Albra Display TRIAL";
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  top: -20px;
+  left: 60px;
 }
 .position {
-    position: relative;
+  position: relative;
 }
 .tabs-second__header:after {
-    content: '';
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-.tabs-second__header input[type=radio] {
-    display:none;
+.tabs-second__header input[type="radio"] {
+  display: none;
 }
 .tabs-second__header label p {
-    padding: 5px;
-    margin-right: 0;
+  padding: 5px;
+  margin-right: 0;
 }
 .tabs-second__header label {
-    // display: block;
-    cursor: pointer;
+  // display: block;
+  cursor: pointer;
 }
 .tabs-second__header label span {
-    display: none;
+  display: none;
 }
 .tab-content {
-    display: none;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color:#ffffff;
-    p {
-        display: inline;
-    }
+  display: none;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  p {
+    display: inline;
+  }
 }
 .tabs-second__header [id^="tab"]:checked + label {
-    background: #FFF;
+  background: #fff;
 }
 .tabs-second__header [id^="tab"]:checked + label img {
-    border: 1px solid rgb(2, 189, 1);
-    border-radius: 10px;
+  border: 1px solid rgb(2, 189, 1);
+  border-radius: 10px;
+}
+.tabs-second__header1 [id^="tab"]:checked + label img {
+  border: 1px solid rgb(2, 189, 1);
+  border-radius: 10px;
+}
+.tabs-second__header2 [id^="tab"]:checked + label img {
+  border: 1px solid rgb(2, 189, 1);
+  border-radius: 10px;
 }
 #tab-first:checked ~ #tab-content-1,
 #tab-second:checked ~ #tab-content-2,
-#tab-third:checked ~ #tab-content-3
-{
-    display: block;
+#tab-third:checked ~ #tab-content-3 {
+  display: block;
 }
-.first-tab, .second-tab, .third-tab {
-    height: 100px;
-    width: 96px;
+.first-tab,
+.second-tab,
+.third-tab {
+  height: 100px;
+  width: 96px;
 }
 .tabs-second__header1:after {
-    content: '';
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-.tabs-second__header1 input[type=radio] {
-    display:none;
+.tabs-second__header1 input[type="radio"] {
+  display: none;
 }
 .tabs-second__header1 label p {
-    padding: 5px;
-    margin-right: 0;
+  padding: 5px;
+  margin-right: 0;
 }
 .tabs-second__header1 label {
-    // display: block;
-    cursor: pointer;
+  // display: block;
+  cursor: pointer;
 }
 .tabs-second__header1 label span {
-    display: none;
+  display: none;
 }
 .tab-content1 {
-    display: none;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color:#ffffff;
-    p {
-        display: inline;
-    }
+  display: none;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  p {
+    display: inline;
+  }
 }
 .tabs-second__header1 [id^="tab"]:checked + label {
-    background: #FFF;
+  background: #fff;
 }
 #tab-first1:checked ~ #tab-content-11,
 #tab-second1:checked ~ #tab-content-21,
-#tab-third1:checked ~ #tab-content-31
-{
-    display: block;
+#tab-third1:checked ~ #tab-content-31 {
+  display: block;
 }
-.first-tab1, .second-tab1, .third-tab1 {
-    height: 100px;
-    width: 96px;
+.first-tab1,
+.second-tab1,
+.third-tab1 {
+  height: 100px;
+  width: 96px;
 }
 .tabs-second__header2:after {
-    content: '';
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-.tabs-second__header2 input[type=radio] {
-    display:none;
+.tabs-second__header2 input[type="radio"] {
+  display: none;
 }
 .tabs-second__header2 label p {
-    padding: 5px;
-    margin-right: 0;
+  padding: 5px;
+  margin-right: 0;
 }
 .tabs-second__header2 label {
-    // display: block;
-    cursor: pointer;
+  // display: block;
+  cursor: pointer;
 }
 .tabs-second__header2 label span {
-    display: none;
+  display: none;
 }
 .tab-content2 {
-    display: none;
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    background-color:#ffffff;
-    p {
-        display: inline;
-    }
+  display: none;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  p {
+    display: inline;
+  }
 }
 .tabs-second__header2 [id^="tab"]:checked + label {
-    background: #FFF;
+  background: #fff;
 }
 #tab-first2:checked ~ #tab-content-12,
 #tab-second2:checked ~ #tab-content-22,
-#tab-third2:checked ~ #tab-content-32
-{
-    display: block;
+#tab-third2:checked ~ #tab-content-32 {
+  display: block;
 }
-.first-tab2, .second-tab2, .third-tab2 {
-    height: 100px;
-    width: 96px;
+.first-tab2,
+.second-tab2,
+.third-tab2 {
+  height: 100px;
+  width: 96px;
 }
 .product__image-descr {
-    color: rgb(2, 189, 1);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1rem, 0.821rem + 0.734vw, 1.5rem);
-    font-weight: 600;
-    text-transform: capitalize;
-    padding-top: 20px;
-    width: clamp(15.625rem, 6.904rem + 35.78vw, 40rem);
+  color: rgb(2, 189, 1);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.821rem + 0.734vw, 1.5rem);
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-top: 20px;
+  width: clamp(15.625rem, 6.904rem + 35.78vw, 40rem);
 }
 @media screen and (max-width: 1050px) {
-    .product {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .product {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
