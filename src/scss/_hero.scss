@@ -1,6 +1,7 @@
 .hero {
   background: url(../img/hero_bkg.svg) center (center/cover) no-repeat;
   background-size: 100% clamp(24.375rem, 1.875rem + 46.875vw, 44.063rem);
+  background-color: #fff5e4;
 }
 .order-btn {
   cursor: pointer;

@@ -19,6 +19,10 @@
   gap: 16px;
   padding-bottom: 32px;
 }
+.pills__image {
+  width: 100px;
+  height: 100px;
+}
 .tabs__header-item {
   cursor: pointer;
   box-sizing: border-box;
@@ -113,6 +117,9 @@
   font-size: 20px;
   font-weight: 700;
 }
+.tab-content1 {
+  width: 370px;
+}
 .addcart {
   cursor: pointer;
   border-radius: 16px;
@@ -165,7 +172,7 @@
 }
 .tab-content {
   display: none;
-  width: 100%;
+  width: 361px;
   padding: 15px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -220,7 +227,6 @@
 }
 .tab-content1 {
   display: none;
-  width: 100%;
   padding: 15px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -263,7 +269,7 @@
 }
 .tab-content2 {
   display: none;
-  width: 100%;
+  width: 390px;
   padding: 15px;
   box-sizing: border-box;
   background-color: #ffffff;

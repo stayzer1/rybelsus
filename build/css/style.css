@@ -304,6 +304,8 @@ body.locked {
 
 .hero {
   background: url(../img/hero_bkg.svg) center center/cover no-repeat;
+  background-size: 100% clamp(24.375rem, 1.875rem + 46.875vw, 44.063rem);
+  background-color: #fff5e4;
 }
 
 .order-btn {
@@ -352,7 +354,7 @@ body.locked {
 
 .hero__info {
   text-align: left;
-  padding-bottom: clamp(5rem, 3.212rem + 7.333vw, 9.813rem);
+  padding-bottom: clamp(1.875rem, -0.911rem + 11.429vw, 9.375rem);
 }
 
 .hero__subtitle {
@@ -361,13 +363,13 @@ body.locked {
   font-size: clamp(1.25rem, 0.879rem + 1.524vw, 2.25rem);
   font-weight: 500;
   text-align: left;
-  padding-top: 100px;
+  padding-top: clamp(2.813rem, -1.116rem + 8.185vw, 6.25rem);
 }
 
 .hero__title {
   color: #1c1c1c;
   font-family: "Albra Display TRIAL";
-  font-size: clamp(2.188rem, 1.514rem + 2.762vw, 4rem);
+  font-size: clamp(2.125rem, 1.614rem + 2.095vw, 3.5rem);
   font-weight: 700;
   text-align: left;
   padding-top: 12px;
@@ -394,7 +396,7 @@ body.locked {
 }
 
 .verified-line {
-  background-color: #E5FFE4;
+  background-color: #e5ffe4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -480,7 +482,7 @@ body.locked {
 .results__text {
   color: black;
   font-family: "Albra Display TRIAL";
-  font-size: clamp(0.875rem, 0.504rem + 1.524vw, 1.875rem);
+  font-size: 30px;
   font-weight: 600;
   text-transform: capitalize;
   padding-top: clamp(2.5rem, 1.571rem + 3.81vw, 5rem);
@@ -493,11 +495,6 @@ body.locked {
   font-size: clamp(0.813rem, 0.604rem + 0.857vw, 1.375rem);
   font-weight: 500;
   padding-top: 8px;
-}
-
-.results__item img {
-  width: clamp(2rem, 1.257rem + 3.048vw, 4rem);
-  height: clamp(2rem, 1.257rem + 3.048vw, 4rem);
 }
 
 .benefits {
@@ -521,7 +518,7 @@ body.locked {
 .benefits__left-title {
   color: black;
   font-family: "Albra Display TRIAL";
-  font-size: clamp(0.875rem, 0.504rem + 1.524vw, 1.875rem);
+  font-size: clamp(2rem, 1.768rem + 0.952vw, 2.625rem);
   font-weight: 600;
   text-align: left;
   text-transform: capitalize;
@@ -543,7 +540,7 @@ body.locked {
 .benefits__right-title {
   color: #02bd01;
   font-family: "Albra Display TRIAL";
-  font-size: clamp(0.875rem, 0.689rem + 0.762vw, 1.375rem);
+  font-size: clamp(1.25rem, 1.157rem + 0.381vw, 1.5rem);
   font-weight: 600;
   text-transform: capitalize;
   padding-bottom: 40px;
@@ -552,7 +549,7 @@ body.locked {
 .benefits__right__item {
   color: black;
   font-family: "Albra Grotesk TRIAL";
-  font-size: clamp(0.813rem, 0.65rem + 0.667vw, 1.25rem);
+  font-size: clamp(1rem, 0.907rem + 0.381vw, 1.25rem);
   font-weight: 600;
 }
 
@@ -671,7 +668,7 @@ body.locked {
 .sale__title {
   color: black;
   font-family: "Albra Display TRIAL";
-  font-size: clamp(1.5rem, 1.082rem + 1.714vw, 2.625rem);
+  font-size: clamp(1.125rem, 0.33rem + 2.273vw, 2.375rem);
   font-weight: 600;
   text-transform: capitalize;
   margin-left: clamp(0.625rem, -0.493rem + 4.587vw, 3.75rem);
@@ -733,7 +730,13 @@ body.locked {
   padding-bottom: 32px;
 }
 
+.pills__image {
+  width: 100px;
+  height: 100px;
+}
+
 .tabs__header-item {
+  cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid #d9d9d9;
@@ -862,6 +865,10 @@ body.locked {
   font-weight: 700;
 }
 
+.tab-content1 {
+  width: 370px;
+}
+
 .addcart {
   cursor: pointer;
   border-radius: 16px;
@@ -922,7 +929,7 @@ body.locked {
 
 .tab-content {
   display: none;
-  width: 100%;
+  width: 361px;
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -934,10 +941,20 @@ body.locked {
 }
 
 .tabs-second__header [id^=tab]:checked + label {
-  background: #FFF;
+  background: #fff;
 }
 
 .tabs-second__header [id^=tab]:checked + label img {
+  border: 1px solid #02bd01;
+  border-radius: 10px;
+}
+
+.tabs-second__header1 [id^=tab]:checked + label img {
+  border: 1px solid #02bd01;
+  border-radius: 10px;
+}
+
+.tabs-second__header2 [id^=tab]:checked + label img {
   border: 1px solid #02bd01;
   border-radius: 10px;
 }
@@ -980,7 +997,6 @@ body.locked {
 
 .tab-content1 {
   display: none;
-  width: 100%;
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -992,7 +1008,7 @@ body.locked {
 }
 
 .tabs-second__header1 [id^=tab]:checked + label {
-  background: #FFF;
+  background: #fff;
 }
 
 #tab-first1:checked ~ #tab-content-11,
@@ -1033,7 +1049,7 @@ body.locked {
 
 .tab-content2 {
   display: none;
-  width: 100%;
+  width: 390px;
   padding: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1045,7 +1061,7 @@ body.locked {
 }
 
 .tabs-second__header2 [id^=tab]:checked + label {
-  background: #FFF;
+  background: #fff;
 }
 
 #tab-first2:checked ~ #tab-content-12,
@@ -1317,7 +1333,7 @@ label {
   width: 20px;
   height: 20px;
   background: transparent;
-  border: 2px solid #16BF0E;
+  border: 2px solid #16bf0e;
   border-radius: 50%;
 }
 
@@ -1329,7 +1345,7 @@ label {
 .checkbox-flip:checked + label span:before {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background: #16BF0E;
+  background: #16bf0e;
 }
 
 .checkbox__text {
@@ -1408,7 +1424,7 @@ label {
 }
 
 .cart-image img {
-  width: clamp(20rem, 16.92rem + 8.214vw, 24.313rem);
+  width: clamp(20rem, 17.911rem + 8.571vw, 25.625rem);
   height: clamp(18.75rem, 17.5rem + 3.333vw, 20.5rem);
 }
 
@@ -2510,7 +2526,7 @@ button.swiper-pagination-bullet {
   }
 
   .burger.active-burger:before {
-    background: "white";
+    background: "black";
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -2521,7 +2537,7 @@ button.swiper-pagination-bullet {
   }
 
   .burger.active-burger:after {
-    background: "white";
+    background: "black";
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -2599,6 +2615,19 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 864px) {
+  .benefits__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .benefits__right-title {
+    padding-top: 30px;
+  }
+}
+
 @media screen and (max-width: 783px) {
   .cart__delivery {
     padding-top: 30px;
@@ -2610,15 +2639,31 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 768px) {
-  .benefits__wrapper {
+  .verified__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
 
-  .benefits__right-title {
-    padding-top: 30px;
+  .verified-line__company {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .results__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+
+  .results {
+    padding-bottom: 40px;
   }
 
   .slide__wrapper {
@@ -2670,8 +2715,19 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 637px) {
-  .verified-line {
-    display: none;
+  .hero {
+    background: none;
+  }
+
+  .hero__subtitle {
+    padding-top: clamp(8.125rem, -0.263rem + 34.413vw, 13.438rem);
+    background: url(../img/hero_bkg.svg) center center/cover no-repeat;
+    background-size: 100% clamp(15rem, 4.683rem + 42.328vw, 25rem);
+    height: clamp(15rem, 4.683rem + 42.328vw, 25rem);
+  }
+
+  .hero__subtitle-text {
+    font-size: 32px;
   }
 }
 
@@ -2699,9 +2755,40 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 560px) {
+  .benefits__left {
+    width: 100%;
+  }
+
+  .benefits__right {
+    padding-left: 0;
+  }
+
+  .benefits__right__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .benefits__right__items .order-btn {
+    width: 175px;
+  }
+
+  .sale__wrapper {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 510px) {
   .splide__arrows .splide__arrow--prev {
     left: 82%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__subtitle-text {
+    width: 100px;
+    margin: 0;
   }
 }
 
@@ -2717,5 +2804,15 @@ button.swiper-pagination-bullet {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .results__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }

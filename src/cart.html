@@ -1,203 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RYBELSUS</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/cart.js"></script>
-<link href="
+    <link
+      href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
-</head>
-<body>
-    <div class="green-line">SPECIAL PROMOTION WILL END IN: <p id="timer3">00:00:00</p></div>
+"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="green-line">
+      SPECIAL PROMOTION WILL END IN:
+      <p id="timer3">00:00:00</p>
+    </div>
     @@include('./html/_header.html')
     <section class="cart">
-        <div class="container">
-            <div class="cart__wrapper-first">
-                <div class="cart__title">YOUR BOX</div>
-                <a href="index.html" class="cart__btn-back">Back To Shopping</a>
-            </div>
-            <div class="cart__wrapper-second">
-                <div class="cart-image">    
-                    <img src="img/product.svg" alt="">
-                </div>
-                <div class="cart__delivery">
-                    <div class="cart__delivery-title">Free express delivery on <br> orders of $300 or more</div>
-                    <div class="cart__delivery-descr">For free express delivery you are missing: $0</div>
-                    <div class="cart__delivery__types">
-                        <div class="cart__delivery__types-title">Select the type of delivery:</div>
-                        <ul>
-                            <div class="express">
-                                <p>Express</p>
-                                <li class="checkbox">
-                                    <input class="checkbox-flip" type="checkbox" id="check1"/>
-                                    <label for="check1"><span></span><p class="checkbox__text"><strike>29,99$</strike></p>Free</label>
-                                </li>
-                            </div>
-                            <div class="ordinary">
-                                <p>Ordinary</p>
-                                <li class="checkbox">
-                                    <input class="checkbox-flip" type="checkbox" id="check2"/>
-                                    <label for="check2"><span></span><p class="checkbox__text"><strike>14,99$</strike></p>Free</label>
-                                </li>
-                            </div>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="cart__result">
-                    <div class="cart__item">
-
-                    </div>
-                    <div class="empty"></div>
-                    <div class="cart__result-text">
-                        <p>Total:</p><span class="total-cart"></span>
-                    </div>
-                    <button class="order-btn cart-payment">Go To Payment</button>
-                </div>
-            </div>
+      <div class="container">
+        <div class="cart__wrapper-first">
+          <div class="cart__title">YOUR BOX</div>
+          <a href="index.html" class="cart__btn-back">Back To Shopping</a>
         </div>
+        <div class="cart__wrapper-second">
+          <div class="cart-image">
+            <img src="img/cart_product.png" alt="" />
+          </div>
+          <div class="cart__delivery">
+            <div class="cart__delivery-title">
+              Free express delivery on <br />
+              orders of $300 or more
+            </div>
+            <div class="cart__delivery-descr">
+              For free express delivery you are missing: $0
+            </div>
+            <div class="cart__delivery__types">
+              <div class="cart__delivery__types-title">
+                Select the type of delivery:
+              </div>
+              <ul>
+                <div class="express">
+                  <p>Express</p>
+                  <li class="checkbox">
+                    <input class="checkbox-flip" type="checkbox" id="check1" />
+                    <label for="check1"
+                      ><span></span>
+                      <p class="checkbox__text"><strike>29,99$</strike></p>
+                      Free</label
+                    >
+                  </li>
+                </div>
+                <div class="ordinary">
+                  <p>Ordinary</p>
+                  <li class="checkbox">
+                    <input class="checkbox-flip" type="checkbox" id="check2" />
+                    <label for="check2"
+                      ><span></span>
+                      <p class="checkbox__text"><strike>14,99$</strike></p>
+                      Free</label
+                    >
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="cart__result">
+            <div class="cart__item"></div>
+            <div class="empty"></div>
+            <div class="cart__result-text">
+              <p>Total:</p>
+              <span class="total-cart"></span>
+            </div>
+            <button class="order-btn cart-payment">Go To Payment</button>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="results">
-        <div class="container">
-            <div class="results__wrapper">
-                <div class="results__text">
-                    Fast Weight Loss With <br> Guaranteed Results:
-                </div>
-                <div class="results__items">
-                    <div class="results__item">
-                        <img src="img/car.svg" alt="">
-                        <div class="results__item-text">Fast shipping worldwide</div>
-                    </div>
-                    <div class="results__item">
-                        <img src="img/blank.svg" alt="">
-                        <div class="results__item-text">Over-the-counter</div>
-                    </div>
-                    <div class="results__item">
-                        <img src="img/circle.svg" alt="">
-                        <div class="results__item-text">Refund within 30 days</div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="results__wrapper">
+          <div class="results__text">
+            Fast Weight Loss With <br />
+            Guaranteed Results:
+          </div>
+          <div class="results__items">
+            <div class="results__item">
+              <img src="img/car.svg" alt="" />
+              <div class="results__item-text">Fast shipping worldwide</div>
             </div>
+            <div class="results__item">
+              <img src="img/blank.svg" alt="" />
+              <div class="results__item-text">Over-the-counter</div>
+            </div>
+            <div class="results__item">
+              <img src="img/circle.svg" alt="" />
+              <div class="results__item-text">Refund within 30 days</div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <div class="verified-line">
-        <div class="container">
-            <div class="verified__wrapper">
-                <div class="verified-line__text">
-                    <div class="verified-line__text-image"><img src="img/Star.svg" alt=""></div>
-                    <div class="verified-line__text-info">
-                        <p>VERIFIED PHARMACY STORE</p>
-                        More 100 Approved Certificates
-                    </div>
-                </div>
-                <div class="verified-line__company">
-                    <img src="img/fda.svg" alt="">
-                    <img src="img/med.svg" alt="">
-                    <img src="img/pgeu.svg" alt="">
-                    <img src="img/mipa.svg" alt="">
-                    <img src="img/cipa.svg" alt="">
-                    <img src="img/Mastercard-logo.svg" alt="">
-                    <img src="img/verified-by-visa-logo-825D2E4C69-seeklogo.svg" alt="">
-                    <img src="img/McAfee__Secure-logo-120FEE6074-seeklogo.svg" alt="">
-                </div>
+      <div class="container">
+        <div class="verified__wrapper">
+          <div class="verified-line__text">
+            <div class="verified-line__text-image">
+              <img src="img/Star.svg" alt="" />
             </div>
-            
+            <div class="verified-line__text-info">
+              <p>VERIFIED PHARMACY STORE</p>
+              More 100 Approved Certificates
+            </div>
+          </div>
+          <div class="verified-line__company">
+            <img src="img/fda.svg" alt="" />
+            <img src="img/med.svg" alt="" />
+            <img src="img/pgeu.svg" alt="" />
+            <img src="img/mipa.svg" alt="" />
+            <img src="img/cipa.svg" alt="" />
+            <img src="img/Mastercard-logo.svg" alt="" />
+            <img
+              src="img/verified-by-visa-logo-825D2E4C69-seeklogo.svg"
+              alt=""
+            />
+            <img src="img/McAfee__Secure-logo-120FEE6074-seeklogo.svg" alt="" />
+          </div>
         </div>
-        
+      </div>
     </div>
     <section class="reviews">
-        <div class="container">
-            <div class="reviews__title">Customer reviews</div>
-            <section class="splide" aria-label="Splide Basic HTML Example">
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                        <img src="img/slider2-prev-arrow.svg" alt="">
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                        <img src="img/slider2-next-arrow.svg" alt="">
-                    </button>
-              </div>
-                <div class="splide__track">
-                      <ul class="splide__list">
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I never thought it was possible to lose weight so quickly. The delivery is fast and the service is easy to use</div>
-                                <div class="reviews__slide-author">Emily Johnson</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">A friend recommended this site to me and I will definitely thank her the next time we meet. Minus 5 kg in a week!</div>
-                                <div class="reviews__slide-author">Sophia Williams</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I never thought it was possible to lose weight so quickly. The delivery is fast and the service is easy to use</div>
-                                <div class="reviews__slide-author">Ava Brown</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">The only drug I've tried that really helped me get rid of the extra weight</div>
-                                <div class="reviews__slide-author">Mia Thompson</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I used to use Ozempik, but the constant injections were unbearable. I switched to this drug and am happy with my life</div>
-                                <div class="reviews__slide-author">Charlotte Adams</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">Always wanted to lose weight, but couldn't. This drug finally changed the situation. I lost 15 kg in a month</div>
-                                <div class="reviews__slide-author">Grace King</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">A friend recommended Rybelsus because she lost weight with it. Today the drug arrived, I will try it!</div>
-                                <div class="reviews__slide-author">Lily Scott</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">I'm just shocked! You can sweat for 2 hours on the treadmill, or you can just drink this product. The result is even better.</div>
-                                <div class="reviews__slide-author">Riley Perez</div>
-                            </div>
-                          </li>
-                          <li class="splide__slide">
-                            <div class="reviews__slide-image">
-                                <img src="img/reviews-slider.svg" alt="" class="reviews__slide-img">
-                                <div class="reviews__slide-text"><img src="img/text-slider2.svg" alt="">Finally one drug that actually works.</div>
-                                <div class="reviews__slide-author">Luna Rivera</div>
-                            </div>
-                          </li>
-                      </ul>
+      <div class="container">
+        <div class="reviews__title">Customer reviews</div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="img/slider2-prev-arrow.svg" alt="" />
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <img src="img/slider2-next-arrow.svg" alt="" />
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />I never thought it
+                    was possible to lose weight so quickly. The delivery is fast
+                    and the service is easy to use
+                  </div>
+                  <div class="reviews__slide-author">Emily Johnson</div>
                 </div>
-              </section>
-              <button class="order-btn reviews-btn">ORDER NOW</button>
-        </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />A friend
+                    recommended this site to me and I will definitely thank her
+                    the next time we meet. Minus 5 kg in a week!
+                  </div>
+                  <div class="reviews__slide-author">Sophia Williams</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />I never thought it
+                    was possible to lose weight so quickly. The delivery is fast
+                    and the service is easy to use
+                  </div>
+                  <div class="reviews__slide-author">Ava Brown</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />The only drug I've
+                    tried that really helped me get rid of the extra weight
+                  </div>
+                  <div class="reviews__slide-author">Mia Thompson</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />I used to use
+                    Ozempik, but the constant injections were unbearable. I
+                    switched to this drug and am happy with my life
+                  </div>
+                  <div class="reviews__slide-author">Charlotte Adams</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />Always wanted to
+                    lose weight, but couldn't. This drug finally changed the
+                    situation. I lost 15 kg in a month
+                  </div>
+                  <div class="reviews__slide-author">Grace King</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />A friend
+                    recommended Rybelsus because she lost weight with it. Today
+                    the drug arrived, I will try it!
+                  </div>
+                  <div class="reviews__slide-author">Lily Scott</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />I'm just shocked!
+                    You can sweat for 2 hours on the treadmill, or you can just
+                    drink this product. The result is even better.
+                  </div>
+                  <div class="reviews__slide-author">Riley Perez</div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="reviews__slide-image">
+                  <img
+                    src="img/reviews-slider.svg"
+                    alt=""
+                    class="reviews__slide-img"
+                  />
+                  <div class="reviews__slide-text">
+                    <img src="img/text-slider2.svg" alt="" />Finally one drug
+                    that actually works.
+                  </div>
+                  <div class="reviews__slide-author">Luna Rivera</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <button class="order-btn reviews-btn">ORDER NOW</button>
+      </div>
     </section>
     @@include('./html/_footer.html')
-</body>
-<script src="./js/scripts.min.js"></script>
-<script src="
+  </body>
+  <script src="./js/scripts.min.js"></script>
+  <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
 </html>

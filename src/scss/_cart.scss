@@ -1,220 +1,221 @@
-
 .checkbox {
-    margin: 15px;
-  }
+  margin: 15px;
+}
 ul {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
 label {
-    font-family: Helvetica; 
-    letter-spacing: 1px;
-    // font-variant: small-caps;
-    // text-transform: uppercase;
-  }
-  .checkbox-flip{
-    display:none;
+  font-family: Helvetica;
+  letter-spacing: 1px;
+  // font-variant: small-caps;
+  // text-transform: uppercase;
+}
+.checkbox-flip {
+  display: none;
 }
 .empty {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 40px;
-    margin: 0 auto;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 .checkbox-flip + label span {
-    display:inline-block;
-    width:25px;
-    height:19px;
-    margin: 0 5px -4px 0; /*layout relationship between check and label*/
-    &:before,
-    &:after {
-      transition: all .3s ease-in-out;
-      content: "";
-      position: absolute;
-      z-index: 1;
-      width: 20px;
-      height: 20px;
-      background: transparent;
-      border: 2px solid #16BF0E; 
-      border-radius: 50%;
-    }
-     &:after {
-      z-index: 0;
-      border: none;
-    }
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  margin: 0 5px -4px 0; /*layout relationship between check and label*/
+  &:before,
+  &:after {
+    transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 2px solid #16bf0e;
+    border-radius: 50%;
+  }
+  &:after {
+    z-index: 0;
+    border: none;
+  }
 }
 .checkbox-flip:checked + label span {
-    &:before {
-     transform: rotateY(180deg);
-     background: #16BF0E;
-   }
+  &:before {
+    transform: rotateY(180deg);
+    background: #16bf0e;
+  }
 }
 .checkbox__text {
-    display: inline;
-    float: left;
+  display: inline;
+  float: left;
 }
-.checkbox span{
-    float: right;
+.checkbox span {
+  float: right;
 }
 .checkbox {
-    width: 180px;
+  width: 180px;
 }
 .cart p {
-    display: inline;
+  display: inline;
 }
 .cart {
-    border-top: 1px solid rgb(217, 217, 217);
+  border-top: 1px solid rgb(217, 217, 217);
 }
 .cart__wrapper-first {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: clamp(0.938rem, 0.089rem + 2.262vw, 2.125rem);
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: clamp(0.938rem, 0.089rem + 2.262vw, 2.125rem);
 }
 .cart__wrapper-second {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .cart__title {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Display TRIAL';
-    font-size: clamp(1.625rem, 0.821rem + 2.143vw, 2.75rem);
-    font-weight: 600;
-    text-transform: capitalize;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Display TRIAL";
+  font-size: clamp(1.625rem, 0.821rem + 2.143vw, 2.75rem);
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .cart__btn-back {
-    padding: 8px clamp(1.125rem, 0.614rem + 2.095vw, 2.5rem);
-    box-sizing: border-box;
-    border: 1px solid rgb(2, 189, 1);
-    border-radius: 16px;
-    color: rgb(2, 189, 1);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
-    font-weight: 600;
+  padding: 8px clamp(1.125rem, 0.614rem + 2.095vw, 2.5rem);
+  box-sizing: border-box;
+  border: 1px solid rgb(2, 189, 1);
+  border-radius: 16px;
+  color: rgb(2, 189, 1);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(0.875rem, 0.607rem + 0.714vw, 1.25rem);
+  font-weight: 600;
 }
 .cart-image {
-    box-sizing: border-box;
-    border: 0.69px solid rgb(205, 205, 205);
-    border-radius: 16px;
-    padding: clamp(0.25rem, -0.286rem + 1.429vw, 1rem);
-    img {
-        width: clamp(20rem, 16.92rem + 8.214vw, 24.313rem);
-        height: clamp(18.75rem, 17.5rem + 3.333vw, 20.5rem);
-    }
+  box-sizing: border-box;
+  border: 0.69px solid rgb(205, 205, 205);
+  border-radius: 16px;
+  padding: clamp(0.25rem, -0.286rem + 1.429vw, 1rem);
+  img {
+    width: clamp(20rem, 17.911rem + 8.571vw, 25.625rem);
+    height: clamp(18.75rem, 17.5rem + 3.333vw, 20.5rem);
+  }
 }
 .cart__delivery-title {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1.125rem, 0.5rem + 1.667vw, 2rem);
-    font-weight: 500;
-    padding-bottom: 12px;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1.125rem, 0.5rem + 1.667vw, 2rem);
+  font-weight: 500;
+  padding-bottom: 12px;
 }
 .cart__delivery-descr {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
-    font-weight: 500;
-    padding-bottom: 24px;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(0.875rem, 0.696rem + 0.476vw, 1.125rem);
+  font-weight: 500;
+  padding-bottom: 24px;
 }
 .cart__delivery__types-title {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
-    font-weight: 600;
-    padding-bottom: 24px;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+  font-weight: 600;
+  padding-bottom: 24px;
 }
-.express, .ordinary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    p {
-        color: rgb(138, 138, 138);
-        font-family: 'Albra Grotesk TRIAL';
-        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
-        font-weight: 400;
-    }
+.express,
+.ordinary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    color: rgb(138, 138, 138);
+    font-family: "Albra Grotesk TRIAL";
+    font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+    font-weight: 400;
+  }
 }
-.checkbox__text, label {
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: 24px;
-    font-weight: 500;
+.checkbox__text,
+label {
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: 24px;
+  font-weight: 500;
 }
 .ordinary .checkbox__text {
-    color: black;
-    padding-right: 10px;
+  color: black;
+  padding-right: 10px;
 }
 .express .checkbox__text {
-    color: black;
-    padding-right: 10px;
+  color: black;
+  padding-right: 10px;
 }
 .cart__result {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
 }
 .cart__result-text {
-    display: flex;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(0, 0, 0);
-    font-family: 'Albra Grotesk TRIAL';
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+  p {
+    color: rgb(138, 138, 138);
+    font-family: "Albra Grotesk TRIAL";
     font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
-    p {
-        color: rgb(138, 138, 138);
-        font-family: 'Albra Grotesk TRIAL';
-        font-size: clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
-        font-weight: 400;
-    }
+    font-weight: 400;
+  }
 }
-.decrease-quantity, .increase-quantity {
-    padding: 4px;
-    background: rgb(2, 189, 1);
-    color: rgb(255, 255, 255);
-    font-family: 'Albra Grotesk TRIAL';
-    font-size: 24px;
-    font-weight: 500;
+.decrease-quantity,
+.increase-quantity {
+  padding: 4px;
+  background: rgb(2, 189, 1);
+  color: rgb(255, 255, 255);
+  font-family: "Albra Grotesk TRIAL";
+  font-size: 24px;
+  font-weight: 500;
 }
 .decrease-quantity {
-    border-radius: 10px 1px 1px 10px;
+  border-radius: 10px 1px 1px 10px;
 }
 .increase-quantity {
-    border-radius: 1px 10px 10px 1px;
+  border-radius: 1px 10px 10px 1px;
 }
 @media screen and (max-width: 1080px) {
-    .cart__wrapper-second {
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .cart__result {
-        justify-content: center;
-        margin: 0 auto;
-        padding-top: 30px;
-    }
+  .cart__wrapper-second {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cart__result {
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 783px) {
-    .cart__delivery {
-        padding-top: 30px;
-    }
-    .cart__result {
-        margin: 0;
-    }
+  .cart__delivery {
+    padding-top: 30px;
+  }
+  .cart__result {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 561px) {
-    .cart__wrapper-second {
-        justify-content: center;
-    }
-    .cart__result {
-        padding-bottom: 30px;
-    }
+  .cart__wrapper-second {
+    justify-content: center;
+  }
+  .cart__result {
+    padding-bottom: 30px;
+  }
 }
 .cart-payment {
-    padding: 14px 60px;
-    font-size: 18px;
+  padding: 14px 60px;
+  font-size: 18px;
 }
